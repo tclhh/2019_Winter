@@ -776,7 +776,7 @@ CSRF( Cross-Site Request Forgery ) 利用网站对于用户网页浏览器的信
 
   界面是一个修改密码的界面：
 
-  ![modify](G:\net security\dvwa\image\modify.jpg)
+  ![modify](image/modify.jpg)
 
   BurpSuite 查看请求：
 
@@ -842,13 +842,13 @@ CSRF( Cross-Site Request Forgery ) 利用网站对于用户网页浏览器的信
 
     访问网站`localhost/get_csrf.html`
 
-    ![test1](image\test1.jpg)
+    ![test1](image/test1.jpg)
 
     点击后结果如下:
 
-    ![test3](image\test3.jpg)
+    ![test3](image/test3.jpg)
 
-    ![test2](image\test2.jpg)
+    ![test2](image/test2.jpg)
 
     使用新的密码登陆，登陆成功。
 
@@ -861,9 +861,9 @@ CSRF( Cross-Site Request Forgery ) 利用网站对于用户网页浏览器的信
     <img src = "http://127.0.0.1:8081/vulnerabilities/csrf/?password_new=hack&password_conf=hack&Change=Change" height = "0" weight = "0" border = "0"> 
   ```
 
-    ![test5](image\test5.jpg)
+    ![test5](image/test5.jpg)
 
-    ![test6](image\test6.jpg)
+    ![test6](image/test6.jpg)
 
     确实发送了请求，但是图片却被隐藏了(长、宽、边界都被设置为 0)。使用之前的密码登陆，登陆失败；使用修改后的密码登陆，登陆成功，这里就不再一一截图。
 
@@ -882,7 +882,7 @@ CSRF( Cross-Site Request Forgery ) 利用网站对于用户网页浏览器的信
     </form>
   ```
 
-    ![test7](image\test7.jpg)
+    ![test7](image/test7.jpg)
 
     使用用户的登陆密码无法登陆，使用攻击者的登陆密码成功登陆。
 
